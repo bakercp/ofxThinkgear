@@ -10,43 +10,31 @@
 	<string>ofxThinkgearExample</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>0EC3F1B7-6679-4760-88AC-1B76CF18F405</key>
+		<key>26364E28D1FAFDAFFF6328F0563F20135BF30E60</key>
 		<string>https://github.com/trentbrooks/ofxThinkgear.git</string>
-		<key>3329A88D-9A8F-44C6-B61F-CEFF1152AA37</key>
-		<string>https://github.com/trentbrooks/openFrameworks.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>apps/myApps/ofxThinkgearExample/ofxThinkgearExample.xcodeproj/project.xcworkspace</string>
+	<string>ofxThinkgearExample/ofxThinkgearExample.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>0EC3F1B7-6679-4760-88AC-1B76CF18F405</key>
-		<string>../../../../../addons/ofxThinkgear</string>
-		<key>3329A88D-9A8F-44C6-B61F-CEFF1152AA37</key>
-		<string>../../../../..</string>
+		<key>26364E28D1FAFDAFFF6328F0563F20135BF30E60</key>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/trentbrooks/openFrameworks.git</string>
+	<string>https://github.com/trentbrooks/ofxThinkgear.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>3329A88D-9A8F-44C6-B61F-CEFF1152AA37</string>
+	<string>26364E28D1FAFDAFFF6328F0563F20135BF30E60</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>0EC3F1B7-6679-4760-88AC-1B76CF18F405</string>
+			<string>26364E28D1FAFDAFFF6328F0563F20135BF30E60</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ofxThinkgear</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>3329A88D-9A8F-44C6-B61F-CEFF1152AA37</string>
-			<key>IDESourceControlWCCName</key>
-			<string>openFrameworks</string>
 		</dict>
 	</array>
 </dict>

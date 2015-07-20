@@ -36,5 +36,8 @@ class ofApp : public ofBaseApp{
     void onThinkgearMeditation(ofxThinkgearEventArgs& args);
     void onThinkgearEeg(ofxThinkgearEventArgs& args);
     void onThinkgearConnecting(ofxThinkgearEventArgs& args);
+    
+    int attention;
+    int meditation;
 		
 };
