@@ -1,30 +1,17 @@
 #pragma once
 
+
 #include "ofMain.h"
 #include "ofxThinkgear.h"
 
-class ofApp : public ofBaseApp{
 
-	public:
-		void setup();
-		void update();
-		void draw();
+class ofApp: public ofBaseApp
+{
+public:
+    void setup() override;
+    void draw() override;
 
-		void keyPressed(int key);
-		void keyReleased(int key);
-		void mouseMoved(int x, int y );
-		void mouseDragged(int x, int y, int button);
-		void mousePressed(int x, int y, int button);
-		void mouseReleased(int x, int y, int button);
-		void windowResized(int w, int h);
-		void dragEvent(ofDragInfo dragInfo);
-		void gotMessage(ofMessage msg);
-    
-    // mindplay brainband bluetooth device
     ofxThinkgear tg;
-    ofxThinkgearEventArgs data;
-    string deviceName;
-    int deviceBaudRate;
     
     void onThinkgearError(ofMessage& err);
     void onThinkgearReady(ofxThinkgearEventArgs& args);
@@ -37,7 +24,7 @@ class ofApp : public ofBaseApp{
     void onThinkgearEeg(ofxThinkgearEventArgs& args);
     void onThinkgearConnecting(ofxThinkgearEventArgs& args);
     
-    int attention;
-    int meditation;
+    int attention = 0;
+    int meditation = 0;
 		
 };
