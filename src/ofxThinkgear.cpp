@@ -166,6 +166,8 @@ ofxThinkgear::ofxThinkgear() : isReady(false) {
     noConnectionRestartCount = 250;
     noDataRestartCount = 500;
     connectionType = TG_STREAM_PARSER;
+    
+    updateListener = ofEvents().update.newListener(this, &ofxThinkgear::update);
 }
 
 ofxThinkgear::~ofxThinkgear(){
@@ -219,8 +221,8 @@ void ofxThinkgear::idle() {
     
 }
 
-void ofxThinkgear::update(){
-    
+void ofxThinkgear::update(ofEventArgs& args)
+{    
     if(connectionType == TG_COMMS_DRIVER) {
         #ifdef TARGET_OSX
         driver.update();

@@ -3,13 +3,6 @@
 #include "ofMain.h"
 
 
-#ifdef _WIN32
-#include <functional> // tr1 deprecated in VS
-#else
-#include <tr1/functional>
-#endif
-
-
 /*
  ThinkgearCommsDriver.
  - Uses the downloadable libraries from ThinkGear.
@@ -73,7 +66,7 @@ public:
     ~ThinkgearCommsDriver();
 
     bool isReady;
-    std::tr1::function<void(int,float)> callback;
+    std::function<void(int,float)> callback;
     string deviceName;
     int baudRate;
     
@@ -81,7 +74,7 @@ public:
     void setup(string deviceName, int baudRate,T  * listener, void (T::*listenerMethod)(int,float)) {
         this->deviceName = deviceName;
         this->baudRate = baudRate;
-        callback = std::tr1::bind(listenerMethod, listener, std::tr1::placeholders::_1, std::tr1::placeholders::_2);
+        callback = std::bind(listenerMethod, listener, std::placeholders::_1, std::placeholders::_2);
     };
     
     bool connect();

@@ -87,7 +87,7 @@ public:
     ~ofxThinkgear();
 
     void flush();
-    void update();
+    void update(ofEventArgs& args);
     void idle();
     bool open();
     void close();
@@ -126,5 +126,7 @@ private:
 	#endif
     ThinkGearStreamParser parser;
     unsigned char buffer[512];
+    
+    ofEventListener updateListener;
 };
 
